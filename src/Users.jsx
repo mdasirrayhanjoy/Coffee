@@ -59,7 +59,7 @@ const Users = () => {
                                 <td>
                                     <div className="avatar justify-center">
                                         <div className="mask mask-squircle w-12 h-12">
-                                            <img src={user.photoURL || "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"} alt={user.name} />
+                                            <img src={user.photoURL} alt="" />
                                         </div>
                                     </div>
                                 </td>
@@ -67,12 +67,16 @@ const Users = () => {
                                 <td>{user.email}</td>
                                 <td>{user.creationTime}</td>
                                 <td>{user.lastSignInTime}</td>
-                                <td className="flex gap-2 justify-center">
+                                <td className="flex gap-2">
                                     <button
                                         onClick={() => handleDelete(user._id)}
                                         className="btn btn-error btn-xs">Delete</button>
-                                    <button className="btn btn-neutral btn-xs">Visit</button>
-                                    <button className="btn btn-outline btn-xs">Edit</button>
+                                    <button
+                                        onClick={() => handleDelete(user._id)}
+                                        className="btn btn-error btn-xs">Vesit</button>
+                                    <button
+                                        onClick={() => handleDelete(user._id)}
+                                        className="btn btn-error btn-xs">Edit</button>
                                 </td>
                             </tr>
                         ))}

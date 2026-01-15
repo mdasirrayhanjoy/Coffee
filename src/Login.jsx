@@ -27,7 +27,7 @@ const Login = () => {
                 console.log(user);
                 Swal.fire({
                     title: "Success!",
-                    text: "Logged in successfully.",
+                    text: "Logged in successfully 100%.",
                     icon: "success"
                 });
 
